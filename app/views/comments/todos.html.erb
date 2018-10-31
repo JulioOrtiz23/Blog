@@ -1,0 +1,15 @@
+<% if user_signed_in? %>
+    <% @comments.each do |comment| %>
+        <div class="publication">
+            <h2 class="user">Usuario: <%= comment.user_id  %></h2>
+            <h5 class="number"> Publicacion: <%= comment.publication_id %></h5>
+            <h4 class="description"><%= comment.descripcion %></h4>
+            <h5 class="date"><%= comment.fecha_ingreso%></h5>
+            <h5 class="comment"><td><%= link_to 'Mostrar', comment %></td></h5>
+        </div>  
+    <% end %>
+<% else %>
+    <body class="background">
+            <h1 style="padding-top:5%;"> Debes iniciar sesion o registrarte</h1>
+    </body>
+<% end %>

@@ -1,0 +1,229 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+ nav
+{
+    padding-bottom: 3%;
+    border-radius: 25px;
+}
+
+h1{
+   text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+li a:hover {
+    background-color: rgba(22, 139, 37, 0.801);
+    color: white ;
+    -webkit-transition: 0.2s;
+}
+
+.active {
+    background-color: #4CAF50;
+    color: white;
+    
+}
+
+.titulo{
+    background-color: rgba(63, 207, 82, 0.801);
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: oblique;
+
+}
+
+.salir{
+    background-color: rgba(63, 207, 82, 0.801);
+    font-family: 'Courier New', Courier, monospace;
+    font-style: oblique;
+
+}
+
+.titulo:hover{
+    color:white;
+}
+
+.salir:hover{
+    color:white;
+}
+
+/******************************************************************************************/
+
+/************************************The css of the table **********************************/
+.center{
+    text-align: center;
+ }
+
+ table{
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 5%;
+ }
+ 
+ th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+/****************************************************************************************/
+
+/************** CSS of the body*********************************************************/ 
+
+.cuadro {
+    margin-left: 15%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    width: 75%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    text-align: center;
+    border-radius: 25px;
+}
+
+body{
+    background-image:url('http://www.socialmonkers.com/wp-content/uploads/2013/05/fondo_icos.jpg');
+    text-decoration: none;
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.form {
+    margin-left: 15%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    width: 75%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    border-radius: 25px;
+}
+
+.inicio {
+    margin-left: 15%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    width: 75%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    border-radius: 25px;
+    
+}
+
+.background
+{
+    background-image:url('http://www.socialmonkers.com/wp-content/uploads/2013/05/fondo_icos.jpg');
+    text-decoration: none;
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/************CSS Of the publications***************************/
+
+
+.publication {
+    margin-left: 15%;
+    margin-bottom: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 75%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    border-radius: 25px;
+}
+
+.user{
+    margin-left: 2%;
+    margin-bottom:5%;
+    margin-top: -5%;
+}
+
+.description{
+    margin-left: 2%;
+    margin-bottom: 5%;
+    
+}
+
+.date{
+    margin-left: 90%;
+    margin-bottom: -5%;
+    font-style: oblique;
+}
+
+.comment{
+    margin-left: 2%;
+    margin-bottom: -5%;
+}
+
+.number{
+    margin-left: 3%;
+    margin-bottom:5%;
+    margin-top: -4%;
+}
+
+.field{
+    margin-left: 2%;
+}
+
+.actions{
+    margin-top: 3%;
+    margin-left: 2%; 
+}
+
+.move{
+    margin-top: 5%;
+    margin-bottom: -10%;
+    margin-left: 90%;
+}
+
+.spacing{
+    margin-top: 10%;
+}

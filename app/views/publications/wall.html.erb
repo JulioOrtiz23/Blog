@@ -1,0 +1,15 @@
+<% if user_signed_in? %>
+    <% @publications.each do |publication| %>
+        <div class="publication">
+            <h2 class="user">Usuario: <%= publication.user_id  %></h2>
+            <h5 class="number"> Publicacion: <%= publication.id %></h5>
+            <h4 class="description"><%= publication.descripcion %></h4>
+            <h5 class="date"><%= publication.fecha_ingreso%></h5>
+            <h5 class="comment"> <%= link_to 'Nuevo Comentario', nuevo_comentario_path %></h5>
+        </div>  
+    <% end %>
+<% else %>
+    <body class="background">
+            <h1 style="padding-top:5%;"> Debes iniciar sesion o registrarte</h1>
+    </body>
+<% end %>

@@ -1,0 +1,25 @@
+<div class="form">
+  <p id="notice"><%= notice %></p>
+
+  <p>
+    <strong>Descripcion:</strong>
+    <%= @comment.descripcion %>
+  </p>
+
+  <p>
+    <strong>Fecha ingreso:</strong>
+    <%= @comment.fecha_ingreso %>
+  </p>
+
+  <p>
+    <strong>Publicacion:</strong>
+    <%= @comment.publication_id %>
+  </p>
+
+  <p>
+    <strong>Usuario:</strong>
+    <%= @comment.user_id %>
+  </p>
+
+    <div class="move"><%= link_to 'Regresar', comentarios_path %></div>
+</div>

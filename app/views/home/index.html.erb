@@ -1,0 +1,9 @@
+<div class="form">
+    <% if user_signed_in? %>
+    <h1>Bienvenido <%= current_user.email %></h1> 
+    <h1>Has iniciado sesiòn</h1>
+<% else %>
+    <body class="background">
+            <h1 style="padding-top:5%;"> Debes iniciar sesion o registrarte</h1>
+    </body>
+<% end %>

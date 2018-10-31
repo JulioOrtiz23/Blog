@@ -1,0 +1,23 @@
+ <div class="form"> 
+  <p id="notice"><%= notice %></p>
+
+  <p>
+    <strong>Descripcion:</strong>
+    <%= @publication.descripcion %>
+  </p>
+
+  <p>
+    <strong>Fecha ingreso:</strong>
+    <%= @publication.fecha_ingreso %>
+  </p>
+
+  <p>
+    <strong>Usuario:</strong>
+    <%= @publication.user_id %>
+  </p>
+
+  <div class="move"><%= link_to 'Editar', edit_publication_path(@publication) %> 
+    <div class="spacing"><%= link_to 'Regresar', publicaciones_path %></div>
+  </div>
+  
+</div>

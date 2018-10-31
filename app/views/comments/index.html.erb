@@ -1,0 +1,46 @@
+<p id="notice"><%= notice %></p>
+
+ <% if user_signed_in? %>
+<div class="cuadro">
+  <h1>Comentarios</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Descripcion</th>
+        <th>Fecha ingreso</th>
+        <th>Publicacion</th>
+        <th>Usuario</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @comments.each do |comment| %>
+        <tr>
+          <td><%= comment.descripcion %></td>
+          <td><%= comment.fecha_ingreso %></td>
+          <td><%= comment.publication_id %></td>
+          <td><%= comment.user_id %></td>
+          <td><%= link_to 'Mostrar', comment %></td>
+          <td><%= link_to 'Editar', edit_comment_path(comment) %></td>
+          <td><%= link_to 'Eliminar', comment, method: :delete, data: { confirm: '¿Estas seguro?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>
+
+  <%= link_to 'Nuevo Comentario', nuevo_comentario_path %>
+</div>
+
+<% else %>
+
+<body class="background">
+  <div class="inicio">
+    <h1 style="padding-top:5%;"> Debes iniciar sesion o registrarte</h1>
+  </div>
+</body>
+
+<% end %>
