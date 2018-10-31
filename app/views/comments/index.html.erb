@@ -1,13 +1,17 @@
+<!--This is the index view, have all the information and scrood of the table comment-->
 <p id="notice"><%= notice %></p>
 
- <% if user_signed_in? %>
+ <% if user_signed_in? %> <!--This help to the website for know if exist a user logged in-->
 <div class="cuadro">
   <h1>Comentarios</h1>
 
+<!--This is the table that have the data of the comments and have the options for show
+edit or destroy a comment-->
   <table>
     <thead>
       <tr>
-        <th>Descripcion</th>
+      <!--This is the header of the table that show you the name of the column-->
+        <th>Descripcion</th>  
         <th>Fecha ingreso</th>
         <th>Publicacion</th>
         <th>Usuario</th>
@@ -22,9 +26,9 @@
           <td><%= comment.fecha_ingreso %></td>
           <td><%= comment.publication_id %></td>
           <td><%= comment.user_id %></td>
-          <td><%= link_to 'Mostrar', comment %></td>
-          <td><%= link_to 'Editar', edit_comment_path(comment) %></td>
-          <td><%= link_to 'Eliminar', comment, method: :delete, data: { confirm: '¿Estas seguro?' } %></td>
+          <td><%= link_to 'Mostrar', comment %></td> <!--Show option-->
+          <td><%= link_to 'Editar', edit_comment_path(comment) %></td>  <!--edit option-->
+          <td><%= link_to 'Eliminar', comment, method: :delete, data: { confirm: '¿Estas seguro?' } %></td> <!--destroy option-->
         </tr>
       <% end %>
     </tbody>
@@ -32,11 +36,12 @@
 
   <br>
 
-  <%= link_to 'Nuevo Comentario', nuevo_comentario_path %>
+  <%= link_to 'Nuevo Comentario', nuevo_comentario_path %> <!--Option to create a new comment-->
 </div>
 
 <% else %>
 
+<!--This is a code that wnen you haven't logged in, the website show you this part-->
 <body class="background">
   <div class="inicio">
     <h1 style="padding-top:5%;"> Debes iniciar sesion o registrarte</h1>

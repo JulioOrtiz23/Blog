@@ -3,10 +3,13 @@ class CommentsController < ApplicationController
 
   # GET /comments
   # GET /comments.json
+
+  #This is use to get the data by the id of the user logged in. 
   def index
     @comments = Comment.where(['user_id = ?', current_user.id])
   end
 
+  #Show all the commens of the users with an order of date
   def todos
     @comments = Comment.order('fecha_ingreso DESC')
   end

@@ -15,6 +15,7 @@
  */
 
 
+ /*****************This is the section of the style of the nav*************************/
  nav
 {
     padding-bottom: 3%;
@@ -84,7 +85,7 @@ li a:hover {
 
 /******************************************************************************************/
 
-/************************************The css of the table **********************************/
+/************************************The css of the tables **********************************/
 .center{
     text-align: center;
  }
@@ -108,7 +109,7 @@ th, td {
 
 /****************************************************************************************/
 
-/************** CSS of the body*********************************************************/ 
+/*********************************** CSS of the body*************************************/ 
 
 .cuadro {
     margin-left: 15%;
@@ -124,7 +125,6 @@ th, td {
 body{
     background-image:url('http://www.socialmonkers.com/wp-content/uploads/2013/05/fondo_icos.jpg');
     text-decoration: none;
-    webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
@@ -159,14 +159,13 @@ body{
 {
     background-image:url('http://www.socialmonkers.com/wp-content/uploads/2013/05/fondo_icos.jpg');
     text-decoration: none;
-    webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-/************CSS Of the publications***************************/
+/**********************************CSS Of the publications********************************/
 
 
 .publication {

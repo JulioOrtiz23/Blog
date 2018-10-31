@@ -1,11 +1,15 @@
+<!--This view is the code that normaly repeat in all of the website, but this view resume the code
+of all of the proyect-->
+
 <!DOCTYPE html>
 <html>
   <head>
     <title>Blog</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <!--This is the reference of the stylesheet aplication-->
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <!--This is the reference of the javascript application-->
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
@@ -19,8 +23,9 @@
     <% end %>
     
    <p class="navbar-text pull-right">
-      <% if user_signed_in? %>
+      <% if user_signed_in? %> <!--This help to the website for know if exist a user logged in-->
         <nav>
+        <!--This is the navbar that have all the options of the website-->
               <ul id="nav-mobile" class="right hide-on-med-and-down">
               <li ><%= link_to 'Blog', muro_path, :class => 'titulo' %></li>
               <li><%= link_to 'Comentarios', todos_comentarios_path, :class => 'navbar-link' %></li>
@@ -31,6 +36,7 @@
             </ul>
         </nav>
       <% else %>
+      <!--This is a code that wnen you haven't logged in, the website show you this part-->
         <nav>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                <li ><%= link_to 'Blog',root_path, :class => 'titulo' %></li>

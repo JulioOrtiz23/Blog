@@ -1,3 +1,4 @@
+<!--This view have all the fields that need some views of the comments for example: edit and show-->
 <%= form_with(model: publication, local: true) do |form| %>
   <% if publication.errors.any? %>
     <div id="error_explanation">
@@ -13,20 +14,20 @@
 
   <div class="field">
     <%= form.label :descripcion %>
-    <%= form.text_area :descripcion %>
+    <%= form.text_area :descripcion %> <!--Field type text-->
   </div>
 
   <div class="field">
     <%= form.label :fecha_ingreso %>
-    <%= form.date_select :fecha_ingreso %>
+    <%= form.date_select :fecha_ingreso %>  <!--Field type date-->
   </div>
 
   <div class="field">
     <%= form.label :user_id %>
-    <%= form.number_field :user_id %>
+    <%= form.number_field :user_id %> <!--Field type integer-->
   </div>
 
   <div class="actions">
-   <%= form.submit %>
+   <%= form.submit %> <!--Option to send all of the information on the form-->
   </div>
 <% end %>

@@ -3,16 +3,20 @@ class PublicationsController < ApplicationController
 
   # GET /publications
   # GET /publications.json
+
+  #This is use to get the data by the id of the user logged in. 
   def index
     @publications = Publication.where(['user_id = ?', current_user.id])
   end
 
+   #Show all the publications of the users with an order of date
   def wall
     @publications = Publication.order('fecha_ingreso DESC')
   end
-
+  
   # GET /publications/1
   # GET /publications/1.json
+
   def show
   end
 

@@ -1,23 +1,24 @@
+ <!--This is the view that show all the information of the publication-->
  <div class="form"> 
   <p id="notice"><%= notice %></p>
 
   <p>
     <strong>Descripcion:</strong>
-    <%= @publication.descripcion %>
+    <%= @publication.descripcion %> <!--type field text-->
   </p>
 
   <p>
     <strong>Fecha ingreso:</strong>
-    <%= @publication.fecha_ingreso %>
+    <%= @publication.fecha_ingreso %> <!--type field date-->
   </p>
 
   <p>
     <strong>Usuario:</strong>
-    <%= @publication.user_id %>
+    <%= @publication.user_id %> <!--type field integer-->
   </p>
 
-  <div class="move"><%= link_to 'Editar', edit_publication_path(@publication) %> 
-    <div class="spacing"><%= link_to 'Regresar', publicaciones_path %></div>
+  <div class="move"><%= link_to 'Editar', edit_publication_path(@publication) %> <!--Edit option-->
+    <div class="spacing"><%= link_to 'Regresar', publicaciones_path %></div> <!--Back option-->
   </div>
   
 </div>

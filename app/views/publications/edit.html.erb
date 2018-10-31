@@ -1,9 +1,12 @@
+<!--This is the view to edit the information of a publication-->
 <div class="form">
     <h1>Editar publicaciòn</h1>
-
+    <!--This is the reference of the form, this form is the file fotm.html.erb 
+    The html use this because the form.html take the data necesario to build the form that
+    need on this view-->
     <%= render 'form', publication: @publication %>
 
-    <div class="move"><%= link_to 'Mostrar', @publication %> 
-    <div class="spacing"><%= link_to 'Regresar', publicaciones_path %></div>
+    <div class="move"><%= link_to 'Mostrar', @publication %> <!--Show option-->
+    <div class="spacing"><%= link_to 'Regresar', publicaciones_path %></div> <!--Back option-->
     </div>
 </div>
